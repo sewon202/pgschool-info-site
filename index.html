@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포곡고 학생을 위한 웹사이트</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function loadNav() {
+            fetch("nav.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("nav-placeholder").innerHTML = data;
+                });
+        }
+        window.onload = loadNav;
+    </script>
+</head>
+<body>
+    <div id="nav-placeholder"></div> 
+    <h1>포곡고 학생을 위한 웹사이트</h1>
+    <h2>제 16대 학생자치회</h2>
+    <p>포곡고 학생 여러분을 위해 제작된 웹사이트입니다. 동아리, 행사, 선택과목 정보를 확인할 수 있습니다.</p>
+</body>
+</html>

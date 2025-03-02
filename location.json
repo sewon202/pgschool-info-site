@@ -1,0 +1,62 @@
+[
+    {
+        "name": "시청각실",
+        "image": "images/123.jpg",
+        "description": "강의듣고어쩌고",
+        "floor":"1층"
+    },
+    {
+        "name": "급식실",
+        "image": "images/123.jpg",
+        "description": "급식먹는곳",
+        "floor":"1층"
+    },
+    {
+        "name": "도서관",
+        "image": "images/123.jpg",
+        "description": "책빌리기",
+        "floor":"2층"
+    },
+    {
+        "name": "과학실",
+        "image": "images/123.jpg",
+        "description": "실험하는데",
+        "floor":"2층"
+    },
+    {
+        "name": "기술실",
+        "image": "images/123.jpg",
+        "description": "기술ㅇ",
+        "floor":"2층"
+    },{
+        "name": "가사실",
+        "image": "images/123.jpg",
+        "description": "요리어쩌고",
+        "floor":"2층"
+    },
+    {
+        "name": "미술실",
+        "image": "images/123.jpg",
+        "description": "미술어쩌고",
+        "floor":"3층"
+    },
+    {
+        "name": "청람재",
+        "image": "images/123.jpg",
+        "description": "자습",
+        "floor":"3층"
+    },
+    {
+        "name": "강당",
+        "image": "images/123.jpg",
+        "description": "운동~",
+        "floor":"4층"
+    },
+    {
+        "name": "음악실",
+        "image": "images/123.jpg",
+        "description": "음악어쩌고",
+        "floor":"5층"
+    }
+
+]

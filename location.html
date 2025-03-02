@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장소 안내</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="location.css">
+    <link rel="stylesheet" href="location-style.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+
+    <h1>학교 장소 소개</h1>
+    <label for="floor">층 선택:</label>
+    <select id="floor">
+        <option value="all">전체</option>
+        <option value="1층">1층</option>
+        <option value="2층">2층</option>
+        <option value="3층">3층</option>
+        <option value="4층">4층</option>
+        <option value="5층">5층</option>
+    </select>
+
+    <div id="location-list" class="container"></div>
+    <script src="script2.js"></script>
+
+    <script>
+        function loadNav() {
+            fetch("nav.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("nav-placeholder").innerHTML = data;
+                });
+        }
+        window.onload = loadNav;
+    </script>
+</body>
+</html>

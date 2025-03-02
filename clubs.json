@@ -1,0 +1,31 @@
+[
+    {
+        "name": "a 동아리",
+        "image": "images/club1.jpg",
+        "description": "example a",
+        "link": ".",
+        "category":"인문"
+    },
+    {
+        "name": "b 동아리",
+        "image": "images/club2.jpg",
+        "description": "example b",
+        "link": ".",
+        "category":"과학"
+    },
+    {
+        "name": "c 동아리",
+        "image": "images/club3.jpg",
+        "description": "example c",
+        "link": "https://example.com",
+        "category":"사회"
+    },
+    {
+        "name": "d 동아리",
+        "image": "images/club4.jpg",
+        "description": "example d",
+        "link": "https://example.com",
+        "category":"예술"
+    }
+
+]

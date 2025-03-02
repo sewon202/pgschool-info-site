@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동아리</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="clubs.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+
+    <h1>2025 동아리 목록</h1>
+    <label for="category">분야 선택:</label>
+    <select id="category">
+        <option value="all">전체</option>
+        <option value="인문">인문</option>
+        <option value="사회">사회</option>
+        <option value="과학">과학</option>
+        <option value="공학">공학</option>
+        <option value="예술">예술</option>
+        <option value="체육">체육</option>
+    </select>
+
+    <div id="club-list" class="club-container"></div>
+    <script src="script.js"></script>
+
+    <script>
+        function loadNav() {
+            fetch("nav.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("nav-placeholder").innerHTML = data;
+                });
+        }
+        window.onload = loadNav;
+
+        let clubsData = []; 
+
+        fetch("clubs.json")
+            .then(response => response.json())
+            .then(clubs => {
+                clubsData = clubs; 
+                displayClubs("all");
+            })
+            .catch(error => console.error("동아리 데이터를 불러오는 중 오류 발생:", error));
+        
+        function displayClubs(category) {
+            let clubContainer = document.getElementById("club-list");
+            if (!clubContainer) {
+                console.error("club-list 요소를 찾을 수 없음!");
+                 return;
+            }
+
+            clubContainer.innerHTML = ""; 
+
+            if (clubsData.length === 0) {
+                clubContainer.innerHTML = "<p>동아리 데이터를 불러오는 중입니다...</p>";
+                return;
+            }
+
+        let filteredClubs = clubsData.filter(club => category === "all" || club.category === category);
+
+        filteredClubs.forEach(club => {
+            let clubDiv = document.createElement("div");
+            clubDiv.classList.add("club");
+            clubDiv.innerHTML = `
+                <img src="${club.image}" alt="${club.name} 포스터">
+                <h3>${club.name}</h3>
+                <p>${club.description}</p>
+                <a href="${club.link}" target="_blank">자세히 보기</a>
+            `;
+            clubContainer.appendChild(clubDiv);
+        });
+    }
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+             let categorySelect = document.getElementById("category");
+            if (categorySelect) {
+                categorySelect.addEventListener("change", function() {
+                    displayClubs(this.value);
+                 });
+            } else {
+                console.error("category 요소를 찾을 수 없음!");
+            }
+        });
+
+
+    </script>
+
+</body>
+</html>
