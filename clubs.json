@@ -1,7 +1,7 @@
 [
     {
         "name": "a 동아리",
-        "image": "images/club1.jpg",
+        "image": "images/club1.png",
         "description": "example a",
         "link": "https://youtu.be/B4mLKcVIERs?si=9bMuSGWDemBPykXu",
         "category":"인문"
