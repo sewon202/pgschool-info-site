@@ -1,0 +1,62 @@
+[
+    {
+        "name": "시청각실",
+        "image": "images/location1.jpg",
+        "description": "영상과 음향 시스템을 갖추고 있어 다양한 수업시간에 활용된다. 또한 외부 강사의 강의,밴드부(포텐)의 런치콘서트 등 여러 행사에도 활용되고 있다.",
+        "floor":"1층"
+    },
+    {
+        "name": "급식실",
+        "image": "images/location2.jpg",
+        "description": "점심시간에 학생들에게 식사를 제공하는 공간으로, 학교 식사 시간에 활용 된다.",
+        "floor":"1층"
+    },
+    {
+        "name": "도서관",
+        "image": "images/location3.jpg",
+        "description": "포곡고 학생들이 자유롭게 책을 빌리고 읽을 수 있는 도서관이다.",
+        "floor":"2층"
+    },
+    {
+        "name": "과학실",
+        "image": "images/location4.jpg",
+        "description": "과학 수업, 실험 수업시 사용하는 과학실이다.",
+        "floor":"2층"
+    },
+    {
+        "name": "기술실",
+        "image": "images/location5.jpg",
+        "description": "다양한 공구와 장비를 활용하여 실습을 통해 기술과 공학 원리를 배우는 공간입니다.",
+        "floor":"2층"
+    },{
+        "name": "가사실",
+        "image": "images/location6.jpg",
+        "description": "요리, 바느질 등 실생활에 필요한 가사 기술을 익히는 실습 공간입니다.",
+        "floor":"2층"
+    },
+    {
+        "name": "미술실",
+        "image": "images/location7.jpg",
+        "description": "미술교과수업을 하는 장소이다. 미술에 필요한 도구들이 있는 창고에는 없는게 없다. 칠판에는 선배들이 그린 그림들이 많이 전시되어 있어 감상할 수 있다. ",
+        "floor":"3층"
+    },
+    {
+        "name": "청람재",
+        "image": "images/location8.jpg",
+        "description": "청람재는 학생들이 자기주도학습을 하는 공간이다. 집중이 잘 되는 책상과 편안한 의자로 공부에 더 집중할 수 있는 환경이 갖추어져있다. 주로 학교에서 진행하는 자기주도학습시간에 사용된다. ",
+        "floor":"3층"
+    },
+    {
+        "name": "강당",
+        "image": "images/location9.jpg",
+        "description": "평소에는 체육 수업으로 많이 이용하는 장소이다. 피구부 활동, 스포츠클럽 활동, 주말체육 활동 등 다양한 스포츠 활동을 할 수 있다. 그밖에도 포곡고등학교의 연말 축제인 가온제의 무대가 되기도 하고 체육대회날 우천시 운동장 대신 사용한다.",
+        "floor":"4층"
+    },
+    {
+        "name": "음악실",
+        "image": "images/location10.jpg",
+        "description": "음악실은 학생들이 주로 음악시간에 사용하는 곳이다. 음악실에는 여러가지 악기들이 준비되어 있고 학생들이 자유롭게 연습할 수 있도록 개인연습실이 마련되어 있다.",
+        "floor":"5층"
+    }
+
+]
